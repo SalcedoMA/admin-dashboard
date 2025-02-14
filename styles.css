@@ -1,0 +1,50 @@
+:root {
+    --sidebar-color: #1992D4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+.header {
+    background-color: white;
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-rows: 4fr 5fr;
+}
+
+.top {
+    border: 1px dashed grey; /*REMOVE LATER */
+}
+
+.bottom {
+    border: 1px dashed grey; /*REMOVE LATER */
+    margin-top: -1px; /*REMOVE LATER */
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: var(--sidebar-color);
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0,max-content));
+    gap: 40px;
+    color: #E2E8F0;
+}
+
+.sidebar div {
+    border: 1px dashed grey; /*REMOVE LATER */
+    margin-top: -1px; /*REMOVE LATER */
+}
