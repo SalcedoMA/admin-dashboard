@@ -12,13 +12,15 @@
     <div class="header">
         <div class="top">
             <div class="search">
-                <img src="icons/magnify.svg" alt="Search">
-                <input type="search" name="search-bar" id="search-bar">
+                <form action="GET" id="search">
+                    <button type="submit"><img src="icons/magnify.svg" alt="Search"></button>
+                    <input type="search" name="search-bar" id="search-bar">
+                </form>
             </div>
-            <div class="notification"><img src="icons/bell-ring-outline.svg" alt="Notification bell"></div>
+            <div class="notification"><button type="button"><img src="icons/bell-ring-outline.svg" alt="Notification bell"></button></div>
             <div class="user">
                 <img src="images/piclumen-marquee-03.webp" alt="User profile picture">
-                <p>Jawn Humblebrag</p>
+                <p><a href="outdex.html">Jawn Humblebrag</a></p>
             </div>
         </div>
         <div class="bottom">
@@ -26,10 +28,10 @@
                 <img src="images/piclumen-marquee-03.webp" alt="User profile picture">
                 <div class="user-info">
                     <p>Hi there, </p>
-                    <h3>Jawn Humblebrag (@jawnblebrag)</h3>
+                    <h3>Jawn Humblebrag (<a href="outdex.html">@jawnblebrag</a>)</h3>
                 </div>
             </div>
-            <div class="actions">
+            <div class="actions" class="actions">
                 <button type="button">New</button>
                 <button type="button">Upload</button>
                 <button type="button">Share</button>
@@ -45,42 +47,60 @@
         </div>
         <div class="menu">
             <div class="menu item">
-                <img src="icons/home.svg" alt="Home">
-                <p>Home</p>
+                <a href="outdex.html" class="menu item">
+                    <img src="icons/home.svg" alt="Home">
+                    <p>Home</p>
+                </a>
             </div>
             <div class="menu item">
-                <img src="icons/card-account-details-outline.svg" alt="Profile" srcset="">
-                <p>Profile</p>
+                <a href="outdex.html">
+                    <img src="icons/card-account-details-outline.svg" alt="Profile" srcset="">
+                    <p>Profile</p>
+                </a>
             </div>
             <div class="menu item">
-                <img src="icons/message-outline.svg" alt="Messages">
-                <p>Messages</p>
+                <a href="outdex.html">
+                    <img src="icons/message-outline.svg" alt="Messages">
+                    <p>Messages</p>
+                </a>
             </div>
             <div class="menu item">
-                <img src="icons/clock-time-eight.svg" alt="History">
-                <p>History</p>
+                <a href="outdex.html">
+                    <img src="icons/clock-time-eight.svg" alt="History">
+                    <p>History</p>
+                </a>
             </div>
             <div class="menu item">
-                <img src="icons/format-list-checks.svg" alt="Tasks">
-                <p>Tasks</p>
+                <a href="outdex.html">
+                    <img src="icons/format-list-checks.svg" alt="Tasks">
+                    <p>Tasks</p>
+                </a>
             </div>
             <div class="menu item">
-                <img src="icons/account-group-outline.svg" alt="Communities">
-                <p>Communities</p>
+                <a href="outdex.html">
+                    <img src="icons/account-group-outline.svg" alt="Communities">
+                    <p>Communities</p>
+                </a>
             </div>
         </div>
         <div class="settings">
             <div class="settings item">
-                <img src="icons/cog.svg" alt="Settings">
-                <p>Settings</p>
+                <a href="outdex.html">
+                    <img src="icons/cog.svg" alt="Settings">
+                    <p>Settings</p>
+                </a>
             </div>
             <div class="settings item">
-                <img src="icons/account-question-outline.svg" alt="Support">
-                <p>Support</p>
+                <a href="outdex.html">
+                    <img src="icons/account-question-outline.svg" alt="Support">
+                    <p>Support</p>
+                </a>
             </div>
             <div class="settings item">
-                <img src="icons/shield-lock-outline.svg" alt="Privacy">
-                <p>Privacy</p>
+                <a href="outdex.html">
+                    <img src="icons/shield-lock-outline.svg" alt="Privacy">
+                    <p>Privacy</p>
+                </a>
             </div>
         </div>
     </div>
@@ -91,73 +111,71 @@
             <h2 class="title">Your projects</h2>
             <div class="projects">
                 <div class="cards">
-                    <h3>I'm baby...</h3>
+                    <h3><a href="outdex.html">I'm baby...</a></h3>
                     <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
                         Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
                 <div class="cards">
-                    <h3>I'm baby...</h3>
-                    <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
-                        Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
+                    <h3><a href="outdex.html">Keytar poke</a></h3>
+                    <p>PBruh pabst activated charcoal irony twee tilde organic, 
+                        PBR&B air plant butcher master cleanse jianbing vegan craft beer.</p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
                 <div class="cards">
-                    <h3>I'm baby...</h3>
-                    <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
-                        Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
+                    <h3><a href="outdex.html">Cardigan solarpunk</a></h3>
+                    <p>Marxism af echo park skateboard, cupping kale chips hashtag migas man braid fit. 
+                        Art party neutral milk hotel deep v chillwave occupy asymmetrical Brooklyn subway tile offal prism. Aesthetic chillwave pickled sriracha trust fund banh mi.  </p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
                 <div class="cards">
-                    <h3>I'm baby...</h3>
-                    <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
-                        Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
+                    <h3><a href="outdex.html">Pitchfork humblebrag chartreuse</a></h3>
+                    <p>DIY taxidermy live-edge 90's health goth YOLO butcher. Taiyaki neutra biodiesel etsy bushwick, activated charcoal locavore. 
+                        Blog scenester stumptown mixtape pinterest 8-bit, beard freegan irony cray vibecession bitters man bun gluten-free vexillologist. </p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
                 <div class="cards">
-                    <h3>I'm baby...</h3>
-                    <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
-                        Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
+                    <h3><a href="outdex.html">Narwhal bespoke</a></h3>
+                    <p>Flannel keytar VHS bruh vegan, slow-carb letterpress enamel pin green juice freegan live-edge. </p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
                 <div class="cards">
-                    <h3>I'm baby...</h3>
+                    <h3><a href="outdex.html">Big mood solarpunk</a></h3>
                     <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
                         Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
                 <div class="cards">
-                    <h3>I'm baby...</h3>
-                    <p>Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf. 
-                        Jean shorts marxism pok pok vinyl XOXO cliche brunch actually beard ascot unicorn offal. </p>
+                    <h3><a href="outdex.html">baby</a></h3>
+                    <p>XOXO cliche brunch. </p>
                     <div class="card-actions">
-                        <img src="icons/star-plus.svg" alt="Add to favorites">
-                        <img src="icons/eye-plus.svg" alt="Inspect">
-                        <img src="icons/transit-connection-variant.svg" alt="Connection">
+                        <button type="button"><img src="icons/star-plus.svg" alt="Add to favorites"></button>
+                        <button type="button"><img src="icons/eye-plus.svg" alt="Inspect"></button>
+                        <button type="button" class="popup"><img src="icons/transit-connection-variant.svg" alt="Connection"></button>
                     </div>
                 </div>
             </div>
@@ -167,18 +185,18 @@
                 <h2 class="title">Announcements</h2>
                 <div class="news-container">
                     <div class="news">
-                        <h3>keffiyeh chia</h3>
-                        <p>retro heirloom, blue bottle wayfarers four loko quinoa. Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf.</p>
+                        <h3><a href="outdex.html">keffiyeh chia</a></h3>
+                        <p>retro heirloom, blue bottle wayfarers four loko quinoa. Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter.</p>
                     </div>
                     <div class="divider"></div>
                     <div class="news">
-                        <h3>keffiyeh chia</h3>
-                        <p>retro heirloom, blue bottle wayfarers four loko quinoa. Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf.</p>
+                        <h3><a href="outdex.html">Franzen kombucha</a></h3>
+                        <p>thundercats jianbing pop-up. +1 pabst heirloom readymade portland migas celiac ennui tattooed wolf.</p>
                     </div>
                     <div class="divider"></div>
                     <div class="news">
-                        <h3>keffiyeh chia</h3>
-                        <p>retro heirloom, blue bottle wayfarers four loko quinoa. Pickled fashion axe poke wayfarers DSA, shaman adaptogen typewriter celiac ennui tattooed wolf.</p>
+                        <h3><a href="outdex.html">Street art intelligentsia</a></h3>
+                        <p>raustin shabby chic gentrify bodega boys JOMO heirloom vibecession slow-carb. Keytar tote bag next level tumeric, taxidermy selvage neutra raw denim. Adaptogen. </p>
                     </div>
                 </div>
             </div>
@@ -188,28 +206,28 @@
                     <div class="trend-user">
                         <img src="images/usrimg1.jpg" alt="profile picture">
                         <div class="user-info">
-                            <h4>@tegan</h4>
+                            <h4><a href="outdex.html">@tegan</a></h4>
                             <p>Jean shorts marxism</p>
                         </div>
                     </div>
                     <div class="trend-user">
                         <img src="images/usrimg2.webp" alt="profile picture">
                         <div class="user-info">
-                            <h4>@morgan</h4>
+                            <h4><a href="outdex.html">@morgan</a></h4>
                             <p>Sus mustache subway</p>
                         </div>
                     </div>
                     <div class="trend-user">
                         <img src="images/usrimg3.jpeg" alt="profile picture">
                         <div class="user-info">
-                            <h4>@kendall</h4>
+                            <h4><a href="outdex.html">@kendall</a></h4>
                             <p>Tile bodega</p>
                         </div>
                     </div>
                     <div class="trend-user">
                         <img src="images/usrimg4.jpeg" alt="profile picture">
                         <div class="user-info">
-                            <h4>@alex</h4>
+                            <h4><a href="outdex.html">@alex</a></h4>
                             <p>Goth mumblecore</p>
                         </div>
                     </div>
